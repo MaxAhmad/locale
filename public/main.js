@@ -66,7 +66,7 @@ function getLga(ev) {
 function send(endpoint, data, method) {
   let key = sessionStorage.getItem("mySiteAPIKey");
   let url;
-  url = `http://localhost:5050/${endpoint}`;
+  url = `https://lazy-plum-catfish-fez.cyclic.app/${endpoint}`;
   let h = new Headers();
   if (data) {
     h.append("Content-Type", "application/json");
