@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+      <legend>
+        
+        <form method="POST" id="regForm">
+          <fieldset>
+            <legend>Register for API KEY</legend>
+            <p>
+              The Locale API is a simple geographic tool that helps you search for regions and states in Nigeria
+            </p>
+            <p>
+              To get started, input your email to create an API key
+            </p>
+           
+            <div class="formBox">
+              <label for="email">Email</label>
+              <input id="email" type="email" autocomplete="off" />
+            </div>
+            <div class="formBox">
+              <button id="btnReg">Register</button>
+            </div>
+            <pre class="response">
+              <!-- response from server goes here -->
+            </pre>
+          </fieldset>
+        </form>
+  
+        <form method="GET" id="stateForm">
+          <fieldset>
+            <legend>Get States</legend>
+            <p>
+              Click here to make request for all the states of Nigeria
+            </p>
+            <div class="formBox">
+              <button id="btnAllState">Get All States</button>
+            </div>
+            <p>
+              To search for a state, input the state in the search feild, for example Lagos
+            </p>
+            <div class="formBox">
+              <label for="state"></label>
+              <input type="text" id="state" placeholder="Search a State" />
+              <button id="btnState">Search a State</button>
+            </div>
+            <pre class="response">
+              <!-- response from server goes here -->
+            </pre>
+          </fieldset>
+        </form>
+  
+        <form method="GET" id="regionForm">
+          <fieldset>
+            <legend>Get Regions</legend>
+            <p>
+              Click here to make request for all the states of Nigeria
+            </p>
+            <div class="formBox">
+              <button id="btnAllRegion">Get All Regions</button>
+            </div>
+            <p>
+              To search for a region, input the region in the search feild, for example South West
+            </p>
+            <div class="formBox">
+              <label for="region"></label>
+              <input type="text" id="region" placeholder="Search a Region" />
+              <button id="btnRegion">Search a Region</button>
+            </div>
+            <pre class="response">
+              <!-- response from server goes here -->
+            </pre>
+          </fieldset>
+        </form>
+
+        <form method="GET" id="lgaForm">
+          <fieldset>
+            <legend>Get LGAs</legend>
+            <p>
+              Click here to make request for all the LGAs(Local government Areas) of Nigeria
+            </p>
+            <div class="formBox">
+              <button id="btnAllLga">Get All LGAs</button>
+            </div>
+            <p>
+              To search for an LGA, input the Lga in the search feild, for example Ikeja
+            </p>
+            <div class="formBox">
+              <label for="lga"></label>
+              <input type="text" id="lga" placeholder="Search an LGA" />
+              <button id="btnLga">Search an LGA</button>
+            </div>
+            <pre class="response">
+              <!-- response from server goes here -->
+            </pre>
+          </fieldset>
+        </form>
+      </legend>
+    </main>
+      <script src="./main.js"></script>
+</body>
+</html>
