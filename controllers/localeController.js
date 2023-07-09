@@ -58,8 +58,8 @@ exports.getAllRegions = async (req, res) => {
     const queryObj = req.query;
     const response = await Region.find(queryObj);
     res.status(200).json({
-      length: response.length,
-      response,
+      
+      data: response,
     });
   } catch (error) {
     res.status(400).json({
