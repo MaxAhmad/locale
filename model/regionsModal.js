@@ -7,7 +7,7 @@ const regionSchema = new mongoose.Schema(
       required: true,
     },
     states: {
-      type: String,
+      type: [String],
       required: true,
     },
     description: {
